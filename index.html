@@ -1,12 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lookerday</title>
-    <script>
-    </script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      .logo {
+        width: 150px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .links {
+        display: flex;
+        gap: 20px;
+      }
+
+      .links a img {
+        width: 120px;
+        height: auto;
+        transition: transform 0.2s;
+      }
+
+      .links a img:hover {
+        transform: scale(1.05);
+      }
+
+      .instagram {
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      .instagram a {
+        color: #e4405f;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .instagram a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
-  <body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;">
-    <h2>HOSGELDİNİZ</h2>
+  <body>
+    <!-- LOGO -->
+    <img src="https://www.lookerday.com/LookerDay.png" alt="Lookerday Logo" class="logo" />
+
+    <!-- BAŞLIK -->
+    <h2>HOŞGELDİNİZ</h2>
+
+    <!-- INSTAGRAM -->
+    <div class="instagram">
+      <a href="https://instagram.com/youraccount" target="_blank">@youraccount</a>
+    </div>
+
+    <!-- STORE LİNKLERİ -->
+    <div class="links">
+      <a href="https://play.google.com/store/apps/details?id=your.app.id" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Play Store" />
+      </a>
+      <a href="https://apps.apple.com/app/your-app-id" target="_blank">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" />
+      </a>
+    </div>
   </body>
 </html>
