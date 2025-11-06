@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lookerday QR</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const uid = params.get("uid");
+      const appLink = `lookerday://qr?uid=${uid}`;
+      
+      // Uygulamayı açmayı dene
+      window.location = appLink;
+
+      // 1 saniye içinde açılmazsa store’a yönlendir
+      setTimeout(() => {
+        const ua = navigator.userAgent || navigator.vendor;
+        if (/android/i.test(ua)) {
+          window.location = "https://play.google.com/store/apps/details?id=com.lookerday";
+        } else if (/iPad|iPhone|iPod/.test(ua)) {
+          window.location = "https://apps.apple.com/app/idXXXXXXXXX";
+        } else {
+          window.location = "https://lookerday.com";
+        }
+      }, 10000);
+    </script>
+  </head>
+  <body style="display:flex;justify-content:center;align-items:center;height:100vh;font-family:sans-serif;">
+    <h2>Uygulama açılıyor...</h2>
+  </body>
+</html>
