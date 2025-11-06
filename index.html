@@ -6,7 +6,7 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       const uid = params.get("uid");
-      const appLink = `https://ulukayaharun.github.io/lookerday-site/uid=${uid}`;
+      const appLink = `lookerday://qr?uid=${uid}`;
       
       // Uygulamayı açmayı dene
       window.location = appLink;
