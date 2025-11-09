@@ -5,12 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LookerDay'e Hoş Geldiniz</title>
     
+    <meta name="description" content="LookerDay'e hoş geldiniz. Uygulamalarımızı indirin, sosyal medya hesaplarımızı takip edin ve iletişimde kalın.">
+    <meta name="keywords" content="LookerDay, planlama, uygulama, iletişim, app store, google play">
+
     <link rel="icon" href="https://www.lookerday.com/LookerDay.png" type="image/png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="LookerDay'e Hoş Geldiniz">
+    <meta property="og:description" content="Daha planlı bir yaşam için uygulamalarımızı keşfedin.">
+    <meta property="og:image" content="https://www.lookerday.com/LookerDay.png">
+    <meta property="og:url" content="https://www.lookerday.com">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LookerDay",
+      "url": "https://www.lookerday.com",
+      "logo": "https://www.lookerday.com/LookerDay.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "support@lookerday.com",
+        "contactType": "customer support"
+      },
+      "sameAs": [
+        "https://instagram.com/looker_day",
+        "https://linkedin.com/company/lookerday"
+      ]
+    }
+    </script>
 
     <style>
         /* --- GENEL AYARLAR --- */
         :root {
-            --ana-renk: #0e2a47; /* Logo laciverti */
+            --ana-renk: #0e2a47;
             --ikincil-renk: #f8f9fa;
             --metin-renk: #333333;
             --beyaz: #ffffff;
@@ -53,13 +81,12 @@
             justify-content: center;
         }
         
-        /* LOGO STİLİ (Border-Radius dahil) */
         .logo-placeholder img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
             filter: drop-shadow(0 8px 16px rgba(14, 42, 71, 0.15));
-            border-radius: 24px; /* Logonun köşeleri yumuşatıldı */
+            border-radius: 24px;
         }
 
         h1 {
